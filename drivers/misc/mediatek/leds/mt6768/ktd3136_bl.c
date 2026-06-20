@@ -789,7 +789,6 @@ void ktd3137_brightness_set_workfunc(struct ktd3137_chip *chip, int brightness)
 {
 	struct ktd3137_bl_pdata *pdata = chip->pdata;
 	int bl_level = brightness;
-	//static u8 brightness_off_flag = WT_FALSE;
 
 	if (lcd_id == 1) { /* 一供 */
 	    brightness = bl_mapping_table1[brightness];
