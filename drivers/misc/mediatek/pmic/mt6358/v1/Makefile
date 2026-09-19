@@ -51,3 +51,4 @@ ifndef CONFIG_MTK_EXTERNAL_CHARGER_TYPE_DETECT
 obj-$(CONFIG_MTK_PMIC_CHIP_MT6358) += pmic_dummy_chr_type_det.o
 endif
 
+CFLAGS_pmic_api.o += -O1
