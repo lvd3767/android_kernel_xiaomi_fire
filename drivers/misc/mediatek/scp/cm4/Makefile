@@ -29,6 +29,7 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/sensors-1.0/hwmon/include
 #ifeq ($(CONFIG_MTK_ENG_BUILD),y)
 CFLAGS_scp_logger.o += -DDEBUG
 CFLAGS_scp_helper.o += -DDEBUG
+CFLAGS_scp_helper.o += -O1
 CFLAGS_scp_excep.o += -DDEBUG
 CFLAGS_scp_ipi.o += -DDEBUG
 CFLAGS_scp_irq.o += -DDEBUG
